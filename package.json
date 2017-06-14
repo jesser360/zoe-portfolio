@@ -1,0 +1,24 @@
+{
+  "name": "zoe-portfolio",
+  "version": "1.0.0",
+  "description": "fashion portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesser360/zoe-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesser360/zoe-portfolio/issues"
+  },
+  "homepage": "https://github.com/jesser360/zoe-portfolio#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-touchswipe": "^1.6.15"
+  }
+}
