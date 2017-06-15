@@ -1,6 +1,7 @@
 console.log('sanity check')
 $(document).ready(function() {
-
+  $('#zoe-prof').hide();
+  $('#about-box').hide();
   $(function() {
     //Enable swiping...
     var cosmicCounterRight = 0;
@@ -59,11 +60,24 @@ $(document).ready(function() {
     $this.data('Zoe Zimski', $this.text());
     $this.text("Z Z");
   })
-
+  var counter = 0;
 $("#zoe-btn").click(function(){
-  console.log('clicked');
+  counter++;
+  if(counter % 2 === 0){
+    $("#about-box").hide(1000);
+    $('#zoe-prof').hide(1000);
+    $('#insta').hide(1000);
+    console.log(counter);
+  } else {
+    $("#about-box").addClass('about');
+    $("#about-box").show(1000);
+    $('#zoe-prof').show(1000);
+    $('#insta').show(1000);
+  }
 });
 
-
+$(window).scroll(function(){ 
+    $('#about-box').css('top', $(window).scrollTop());
+}).trigger('scroll');
 
 });//close doc ready
