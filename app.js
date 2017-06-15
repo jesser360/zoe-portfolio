@@ -49,10 +49,21 @@ $(document).ready(function() {
     });
   });
 
+  $('#zoe-btn').hover(function(){
+    var $this = $(this);
+    $this.data('Z Z', $this.text());
+    $this.text("Zoe Zimski");
+    });
+  $(window).scroll(function(){
+    var $this = $('#zoe-btn');
+    $this.data('Zoe Zimski', $this.text());
+    $this.text("Z Z");
+  })
 
-  // $("#cosmic1").click(function(){
-  //   console.log('clicked')
-  // })
+$("#zoe-btn").click(function(){
+  console.log('clicked');
+});
+
 
 
 });//close doc ready

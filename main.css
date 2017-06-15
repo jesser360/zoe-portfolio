@@ -2,3 +2,13 @@
 #cosmic1:hover{
   border: 1px solid orange;
 }
+
+.fixed{
+  position: fixed;
+}
+#zoe-btn{
+  z-index: 1;
+}
+.about{
+  position: absolute;
+}
