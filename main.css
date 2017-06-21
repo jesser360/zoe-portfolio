@@ -70,7 +70,8 @@
   }
   .model-pic{
     height:70%;
-    margin-top: 30vw;
+    margin-top: 100%;
+    margin-left: 100%;
   }
   .about{
     height:70%;
@@ -91,5 +92,10 @@
     margin-left: 25px;
     text-shadow: 2px 2px 2px lightgray;
     font-size:6vw;
+  }
+  .hide-div{
+    display: none;
+    position: fixed !important;
+    z-index: -1;
   }
 }
