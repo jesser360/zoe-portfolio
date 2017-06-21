@@ -60,6 +60,7 @@ $(document).ready(function() {
     $this.data('Zoe Zimski', $this.text());
     $this.text("Z Z");
   })
+
   var counter = 0;
 $("#zoe-btn").click(function(){
   counter++;
@@ -73,11 +74,16 @@ $("#zoe-btn").click(function(){
     $("#about-box").show(1000);
     $('#zoe-prof').show(1000);
     $('#insta').show(1000);
+    $("#cosmic-big").rotate({animateTo:180});
+
   }
 });
 
-$(window).scroll(function(){ 
+$(window).scroll(function(){
     $('#about-box').css('top', $(window).scrollTop());
 }).trigger('scroll');
 
+$(window).scroll(function() {
+    $('#photo2').animate({top:$(window).scrollTop()});
+});
 });//close doc ready

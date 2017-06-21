@@ -1,19 +1,24 @@
-
-#cosmic1:hover{
-  border: 1px solid orange;
+.model-pic{
+  height:45vw;
+  -moz-box-shadow: 3px 4px 5px rgba(0,0,0,.5);
+  -webkit-box-shadow: 3px 4px 5px rgba(0,0,0,.5);
+  box-shadow: 3px 4px 5px rgba(0,0,0,.5);
 }
 
 
 #zoe-btn{
   position:fixed;
   clear:none;
-  z-index: 1;
+  z-index: 10;
   margin-top: 25px;
   margin-left: 25px;
+  text-shadow: 2px 2px 2px lightgray;
+  font-size:3vw;
 
 }
 #zoe-prof{
-  width:20vw;
+  width:17vw;
+  margin-left: 2vw;
 }
 #aboutPara{
   color:white;
@@ -25,14 +30,21 @@
   clear:both;
   position:relative;
   float: left;
-
+  z-index: 1;
+}
+.back-photo{
+  position: relative;
+  background-size:cover;
+  z-index: 0;
 }
 .photo1{
-  position: relative;
+  background-image: url("http://i.imgur.com/ZygtRJG.png");
 }
 .photo2{
-  float:none;
-  clear:both;
+  background-image: url("http://i.imgur.com/IBVwiU1.png");
+}
+.photo3{
+  background-image: url("http://i.imgur.com/BpeBImg.png");
 }
 .hidden{
   display: none;
@@ -46,4 +58,8 @@
 .insta-icon{
   width:4vw;
   margin-left:-14px;
+}
+#cosmic-big{
+  width:110%;
+  position:relative;
 }
